@@ -92,12 +92,12 @@ Run application in Intellij
 
 Clone the project
 ```bash 
-https://github.com/Campus-Molndal-JIN23/todolist-DreaTR.git
+https://github.com/DreaTR/demo.git
 ```
 
 Go to the project directory
 ```bash 
-https://github.com/Campus-Molndal-JIN23/todolist-DreaTR
+https://github.com/DreaTR/demo
 ```
 
 ## Credits
