@@ -118,8 +118,8 @@ https://github.com/DreaTR/demo
 
 
 ## Tests
-The project also includes test cases to verify proper functionality of the database class. The tests are 
-contained in the DatabaseTest class and use the JUnit 5 framework. To run the tests, JUnit 5 must be 
+The project also includes two test cases to verify proper functionality of the database and Kafka Server class. The tests are 
+contained in the DatabaseTest and KafkaServerTest class and use the JUnit 5 framework. To run the tests, JUnit 5 must be 
 properly configured in the project and then run the test methods in the DatabaseTest class.
 
 
