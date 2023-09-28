@@ -55,9 +55,10 @@ Kafka cluster and manage the data flow from a web API to a Java Maven applicatio
 <artifactId>mysql-connector-j</artifactId>
 <version>8.0.33</version>
 
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-api</artifactId>
+<version>5.10.0</version>
 
-[Libaries]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Usage
 
@@ -117,9 +118,9 @@ https://github.com/Campus-Molndal-JIN23/todolist-DreaTR
 
 
 ## Tests
-The project also includes test cases to verify proper functionality of the classes. The tests are 
-contained in the DemoApplicationTest class and use the JUnit 5 framework. To run the tests, JUnit 5 must 
-be properly configured in the project and then run the test methods in the DemoApplication class.
+The project also includes test cases to verify proper functionality of the database class. The tests are 
+contained in the DatabaseTest class and use the JUnit 5 framework. To run the tests, JUnit 5 must be 
+properly configured in the project and then run the test methods in the DatabaseTest class.
 
 
 

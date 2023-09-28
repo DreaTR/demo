@@ -15,7 +15,6 @@ public class User {
     public long getId() {
         return id;
     }
-
     public String getFirstName() {
         return firstName;
     }

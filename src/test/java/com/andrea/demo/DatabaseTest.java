@@ -29,13 +29,11 @@ public class DatabaseTest {
         System.out.println("Alla test avslutade!");
 
     }
-
     @Test
     @Order(1)
     void createUser() {
 
         //Skapa ett objekt av User med specifik data
-
         User user = new User();
         user.setFirstName("A");
         user.setLastName("B");
