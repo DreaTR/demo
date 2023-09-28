@@ -3,44 +3,53 @@ package com.andrea.demo.payload;
 import jakarta.persistence.*;
 
 @Entity
-@Table (name = "users")
+@Table (name = "movies")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String firstName;
-    private String lastName;
+
+    private String movieTitle;
+    private String movieGenre;
+    private int releaseDate;
+
 
     public long getId() {
         return id;
     }
-    public String getFirstName() {
-        return firstName;
+
+    public String getMovieTitle() {
+        return movieTitle;
     }
 
-    public String getLastName() {
-        return lastName;
+    public void setMovieTitle(String movieTitle) {
+        this.movieTitle = movieTitle;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public String getMovieGenre() {
+        return movieGenre;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setMovieGenre(String movieGenre) {
+        this.movieGenre = movieGenre;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(int releaseDate) {
+        this.releaseDate = releaseDate;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", movieTitle='" + movieTitle + '\'' +
+                ", movieGenre='" + movieGenre + '\'' +
+                ", releaseDate=" + releaseDate +
                 '}';
     }
 }
