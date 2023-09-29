@@ -35,13 +35,14 @@ public class DatabaseTest {
 
         //Skapa ett objekt av User med specifik data
         User user = new User();
-        user.setFirstName("A");
-        user.setLastName("B");
+        user.setMovieTitle("The Conjuring");
+        user.setMovieGenre("Horror");
+        user.setReleaseDate(2013);
 
         //Sparar User till DB
         testUser = userRepository.save(user);
 
-        assertNotNull(userRepository.findById(testUser.getId()).get().getFirstName());
+        assertNotNull(userRepository.findById(testUser.getId()).get().getMovieTitle());
 
         System.out.println(testUser.getId());
 
@@ -55,9 +56,9 @@ public class DatabaseTest {
         assertNotNull(fetchedUser);
 
         //Updatera värdet i fetchedUser
-        fetchedUser.setFirstName("Andrea");
+        fetchedUser.setMovieTitle("The Conjuring");
         userRepository.save(fetchedUser);
-        assertEquals("Andrea", userRepository.findById(testUser.getId()).get().getFirstName());
+        assertEquals("The Conjuring", userRepository.findById(testUser.getId()).get().getMovieTitle());
 
     }
     @Test

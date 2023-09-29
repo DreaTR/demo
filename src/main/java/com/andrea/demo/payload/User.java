@@ -14,6 +14,14 @@ public class User {
     private String movieGenre;
     private int releaseDate;
 
+    /*public User(String movieTitle, String movieGenre, int releaseDate) {
+        super();
+        this.movieTitle = movieTitle;
+        this.movieGenre = movieGenre;
+        this.releaseDate = releaseDate;
+    }
+    */
+
 
     public long getId() {
         return id;

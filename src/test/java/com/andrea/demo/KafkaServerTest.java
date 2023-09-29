@@ -2,13 +2,9 @@ package com.andrea.demo;
 
 import com.andrea.demo.kafka.KafkaConsumer;
 import com.andrea.demo.kafka.KafkaProducer;
-import org.junit.ClassRule;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
