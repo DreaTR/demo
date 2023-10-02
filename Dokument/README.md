@@ -37,7 +37,7 @@ Kafka cluster and manage the data flow from a web API to a Java Maven applicatio
 - [License](#license)
 
 ## Installation
-- Operating system: Windows, Mac, Linux.
+- Operating system: Windows, Mac, Linux
 - JDK 20 (Java Development Kit)
 - Intellij IDEA Community Edition 2023.2
 - Git
@@ -59,6 +59,10 @@ Kafka cluster and manage the data flow from a web API to a Java Maven applicatio
 <artifactId>junit-jupiter-api</artifactId>
 <version>5.10.0</version>
 
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-api</artifactId>
+<version>5.9.3</version>
+<scope>test</scope>
 
 ## Usage
 
@@ -83,21 +87,34 @@ Run application in Intellij
 1: Open postman
 2: Select API Network
 3: Select Post and write HTTP url http://localhost:8080/api/v1/kafka/publish
-4: Select Body -> raw -> JSON format. Type message and send.
+4: Select Body -> raw -> JSON format. Type message and send
+Go back to Intellij's console and a message will be seen there 
+
+These steps are just for one module project (demo)
+
+## To run the complete project with two modules (demo & newdemorootprod)
+
+[Connect to Kafka server]
+
+[Application]
+1: Run DemoApplication in Demo package in background and run Main class in NewDemoRootProd package
+2: Stop the Main class, then DemoApplication
 
 [Terminate Kafka]
-1: Stop the producer and consumer clients with Ctrl-C.
-2: Stop the Kafka broker with Ctrl-C.
-3: Lastly, if the Kafka with ZooKeeper section was followed, stop the ZooKeeper server with Ctrl-C
+1: Stop the producer and consumer clients with Ctrl-C (only for running module project demo) 
+2: Stop the Kafka broker server with Ctrl-C 
+3: Lastly, stop the ZooKeeper server with Ctrl-C and choice Y/N for alternative
 
 Clone the project
 ```bash 
 https://github.com/DreaTR/demo.git
+https://github.com/DreaTR/DemoNewRootProd.git
 ```
 
 Go to the project directory
 ```bash 
 https://github.com/DreaTR/demo
+https://github.com/DreaTR/DemoNewRootProd
 ```
 
 ## Credits
@@ -118,9 +135,10 @@ https://github.com/DreaTR/demo
 
 
 ## Tests
-The project also includes two test cases to verify proper functionality of the database and Kafka Server class. The tests are 
-contained in the DatabaseTest and KafkaServerTest class and use the JUnit 5 framework. To run the tests, JUnit 5 must be 
-properly configured in the project and then run the test methods in the DatabaseTest class.
+The project also includes two test cases to verify proper functionality of the database and Kafka Server 
+class. The tests are contained in the DatabaseTest (Demo package ) and KafkaTest (DemoNewRootProd package).
+The test classes use the JUnit 5 framework. To run the tests, JUnit 5 must be properly configured in the 
+project and then run the test methods in the DatabaseTest and KafkaTest class.
 
 
 
