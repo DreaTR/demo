@@ -67,7 +67,7 @@ Kafka cluster and manage the data flow from a web API to a Java Maven applicatio
 ## Usage
 
 [Command prompt]
-Type cmd in the search field an open two terminals.
+Type cmd in the search field an open two terminals
 
 [Connect to Kafka server]
 Start the zookeeper service (terminal 1)
